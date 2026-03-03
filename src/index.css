@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Genesis Legacy AI Brand Styles */
+@layer base {
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(180deg, #FDF9F4 0%, #F8F6F2 100%);
+    color: #2A3B4F;
+  }
+}
+
+@layer components {
+  .btn-genesis {
+    @apply bg-gradient-to-r from-genesis-blue to-genesis-navy text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+  
+  .card-genesis {
+    @apply bg-white/60 backdrop-blur-sm border border-genesis-light/20 rounded-xl p-6 shadow-lg;
+  }
+}
